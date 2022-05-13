@@ -57,6 +57,12 @@ const ProductSchema = new Schema({
       ref: "Comments",
     },
   ],
+  orderDetails: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "OrderDetails",
+    },
+  ],
 });
 
 module.exports = models.Products || model("Products", ProductSchema);

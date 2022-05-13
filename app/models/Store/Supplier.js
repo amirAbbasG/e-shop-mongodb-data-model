@@ -9,6 +9,13 @@ const SupplierSchema = new Schema({
     type: String,
     required: true,
   },
+  isProposed: {
+    type: Boolean,
+    default: false,
+  },
+  contractDate: {
+    type: Date,
+  },
 });
 
 module.exports = models.Suppliers || model("Suppliers", SupplierSchema);
